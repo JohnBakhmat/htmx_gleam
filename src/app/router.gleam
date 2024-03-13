@@ -36,7 +36,14 @@ pub fn handle_request(req: Request, ctx: Context) -> Response {
 }
 
 fn home_page(_req: Request) -> Response {
-  let body = "<h1>Hello, Joe!</h1>"
+  let body =
+    "
+  <div class='w-screen h-screen bg-black text-white grid grid-rows-1 place-items-center'> 
+    <h1 class='text-4xl font-bold text-[#fffbe8]'>
+        <span class='text-[#ffaff3]'>Gleamed</span> all over
+    </h1>
+  <div /> 
+  "
 
   layout_string
   |> string_builder.from_string()
