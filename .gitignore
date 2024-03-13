@@ -1,3 +1,4 @@
+/node_modules
 *.beam
 *.ez
 /build
